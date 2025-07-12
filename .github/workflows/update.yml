@@ -24,11 +24,12 @@ jobs:
         run: | 
           git remote add upstream https://github.com/liquidslr/leetcode-company-wise-problems.git
           git fetch upstream
+          git remote show upstream
 
       - name: Add upstream remote
         run: | 
           git checkout main
-          git merge upstream/main
+          git merge upstream/main --allow-unrelated-histories
 
       - name: Push changes to fork
         run: | 
