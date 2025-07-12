@@ -22,7 +22,7 @@ jobs:
 
       - name: Add upstream remote
         run: | 
-          git remote add upstream https://github.com/liquidslr/leetcode-company-wise-problems
+          git remote add upstream https://github.com/liquidslr/leetcode-company-wise-problems.git
           git fetch upstream
 
       - name: Add upstream remote
